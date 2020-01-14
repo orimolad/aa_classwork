@@ -51,11 +51,15 @@ input[type="submit"] {
   
 }
 
-input[type="submit"] :last-child :hover{
-  -webkit-filter: brightness(80%);
-  background-color: gold;
+
+input:last-child{
+  background-color: gold; 
+
 }
 
+input:last-child:hover{
+  -webkit-filter: brightness(90);
+}
 input[type="raidio"] {
   -webkit-appearance: none;
   cursor:pointer;

@@ -23,13 +23,25 @@ def ok_two_sum?(arr, target)
   return false
 end
 
+require "byebug"
+# def two_sum?(arr, target)
+#   hashed = Hash.new(0)
+#   arr.each { |ele| hashed[ele] += 1 }
+#   p hashed
+#   arr.any? { |ele| ele * 2 != target && hashed[target - ele] == 1 }
+# end
 
 def two_sum?(arr, target)
-  hashed = Hash.new(0)
-  arr.each { |ele| hashed[ele] += 1 }
-  p hashed
-  arr.any? { |ele| ele * 2 != target && hashed[target - ele] == 1 }
+  debugger
+  compliments = {}
+  arr.each do |ele|
+    return true if compliments[target - ele] 
+    compliments[ele] = true
+  end
+  false
+  
 end
+
 
 arr = [0, 1, 5, 7]
 p two_sum?(arr, 6) # => should be true
