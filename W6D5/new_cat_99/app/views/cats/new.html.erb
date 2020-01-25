@@ -1,0 +1,36 @@
+<h1>New Cat</h1>
+
+<form action="<%= cats_url %>" method="POST">
+  <label>Catname: 
+    <input type="text" name="cat[name]" value="<%= @cat.name %>">
+  </label>
+  <br>
+  <label>Color: 
+    <input type="text" name="cat[color]" value="<%= @cat.color %>">
+  </label>
+  <br>
+  <label>Birthdate: 
+    <input type="text" name="cat[birth_date]" value="<%= @cat.birth_date %>">
+  </label>
+  <br>
+  <!-- <div>
+    Sex: 
+    <%= radio_button_tag 'cat[sex]', 'M' %>
+    <label>M</label>
+    <%= radio_button_tag 'cat[sex]', 'F' %>
+    <label>F</label>
+  </div> -->
+  <label>Sex: 
+    <input type="radio" name="cat[sex]" value="F">   
+    <label>F</label>
+    <input type="radio" name="cat[sex]" value="M">
+    <label>M</label>
+  </label>
+  <br>
+  <label>Description: 
+    <textarea name="cat[description]"><%= @cat.description %></textarea>
+    <!--<input type="text" name="cat[description]" value="">-->
+  </label>
+  <br>
+  <input type="submit" value="Create cat!">
+</form>
