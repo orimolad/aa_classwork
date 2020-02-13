@@ -1,0 +1,66 @@
+body {
+    display: flex;
+    justify-content: center;
+    
+}
+
+.ttt{
+    display: flex;
+    flex-wrap: wrap;
+    height: 700px;
+    width: 700px;
+    border: 1px solid black;
+    
+    
+
+}
+
+.square{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    height: 200px;
+    display: block;
+    border: 1px solid red;
+    margin: 15px;
+    background-color: grey;
+    border-radius: 25px;
+    font-size: 45px;
+    text-align: center;
+    align-items: center;
+    
+}
+
+/* .square:hover {
+    background-color: yellow;
+} */
+
+.grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-inline-start: 0px;
+}
+
+li:hover {
+    background-color: yellowgreen;
+}
+
+.clicked {
+    /* background-color: red; */
+    pointer-events: none;
+}
+
+.circle {
+    /* content: "O"; */
+    background-image: linear-gradient(yellow,blue, black);
+
+}
+
+.x {
+    /* content: "x"; */
+    background-image: linear-gradient(purple, orange);
+    
+
+}
